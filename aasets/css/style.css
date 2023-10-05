@@ -38,8 +38,10 @@
     top: 20px;
     right: 20px;
 }
-@media (max-width:768px) {
-    body{
-        overflow: hidden;
-    }
+
+.cursor {
+    cursor: pointer !important;
+}
+a{
+    color: white !important;
 }

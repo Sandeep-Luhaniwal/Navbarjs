@@ -14,19 +14,19 @@
     <meta property="og:url" content="https://navbarjs-333.netlify.app/" />
     <meta property="og:title" content="Navbar" />
     <meta property="og:description" content="Nisi et diam euismod suspendisse tristique quis" />
-    <meta property="og:image" content="https://navbarjs-333.netlify.app/bg_img2.png" />
+    <meta property="og:image" content="https://navbarjs-333.netlify.app/aasets/bg_img2.png" />
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image" />
     <meta property="twitter:url" content="https://navbarjs-333.netlify.app/" />
     <meta property="twitter:title" content="Navbar" />
     <meta property="twitter:description" content="Nisi et diam euismod suspendisse tristique quis" />
-    <meta property="twitter:image" content="https://navbarjs-333.netlify.app/bg_img2.png" />
+    <meta property="twitter:image" content="https://navbarjs-333.netlify.app/aasets/bg_img2.png" />
 
     <!-- Meta Tags Generated with https://metatags.io -->
 
 
-    <link rel="stylesheet" href="/aasets/css/style.css">
+    <link rel="stylesheet" href="./aasets/css/style.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
@@ -38,27 +38,34 @@
             <div class="py-3 d-flex justify-content-between align-items-center">
                 <h1>mainLogo</h1>
                 <ul class="mb-0 ps-0 d-md-flex gap-3 text-white d-none d-md-block">
-                    <li>Home</li>
-                    <li>main</li>
-                    <li>content</li>
-                    <li>Class</li>
-                    <li>fees</li>
+                    <li class="cursor">Home</li>
+                    <li class="cursor"><a href="./Model/index.html" target="/">Modal</a></li>
+                    <li class="cursor"><a href="./Scroll/index.html" target="//">Scroll</a></li>
+                    <li class="cursor"><a href="./Dark Mode/index.html" target="black">Dark Mode</a></li>
+                    <li class="cursor">fees</li>
                 </ul>
                 <button id="openNav" onclick="openNav()" class="menu d-md-none" type="button">&#9776</button>
                 <div id="Menu" class="d-md-none navbar1 d-flex justify-content-center align-items-center">
                     <button class="menu position-absolute closbtn" onclick="closeNav()" type="button">&times;</button>
                     <ul class="mb-0 ps-0 d-flex flex-column gap-3 text-white">
-                        <li onclick="closeNav()">Home</li>
-                        <li onclick="closeNav()">main</li>
-                        <li onclick="closeNav()">content</li>
-                        <li onclick="closeNav()">Class</li>
-                        <li onclick="closeNav()">fees</li>
+                        <li onclick="closeNav()" class="cursor">Home</li>
+                        <li onclick="closeNav()" class="cursor">main</li>
+                        <li onclick="closeNav()" class="cursor">content</li>
+                        <li onclick="closeNav()" class="cursor">Class</li>
+                        <li onclick="closeNav()" class="cursor">fees</li>
                     </ul>
                 </div>
             </div>
         </div>
     </section>
+    <section class="py-3">
+        <div class="container">
+            <label for="favcolor">Select your favorite color:</label>
+            <input type="color" id="favcolor" name="favcolor" value="#ff0000">
+        </div>
+    </section>
     <section>
+
         <div class="container">
             <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit praesentium quaerat qui? Dignissimos
                 tempore odio quibusdam provident fugit? Accusamus a, quae provident id natus perspiciatis! Totam facere
@@ -82,6 +89,7 @@
                 at eaque repellendus commodi.</h1>
         </div>
     </section>
+
 
     <script>
         function openNav() {
