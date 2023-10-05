@@ -8,7 +8,7 @@
 .windowscrollcolor{
     background-color: blue;
     height: 10px;
-    width: 0%;
+    width: 100%;
 }
 .windowscroll{
     background-color: aqua;
@@ -17,10 +17,13 @@
 }
 .header{
     position: sticky;
-    top: 0;
+    top: 10% !important;
+    left: 4% !important;
     z-index: 1;
     background-color: blue;
-    width: 100%;
+    width: 500px;
+    height: 100px;
+
 }
 h1{
     font-size: 84px !important;
