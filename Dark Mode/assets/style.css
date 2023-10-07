@@ -9,4 +9,6 @@
 .darkmode {
     background-color: rgb(10, 2, 2);
     color: white;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 100px;
 }

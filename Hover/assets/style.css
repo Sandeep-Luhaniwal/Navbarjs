@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #050801;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+}
+
+a {
+
+    position: relative;
+    padding: 20px 30px;
+    color: #03e9f4;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    overflow: hidden;
+
+}
+
+a p {
+    z-index: 1;
+    position: relative;
+}
+
+a span:nth-child(5) {
+    bottom: -100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    animation-delay: .50s;
+    transition: all linear 300ms;
+    transform: scale(0);
+}
+
+a:hover span:nth-child(5) {
+    bottom: 0%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: pink;
+    animation-delay: .50s;
+    transform: rotate(30deg) scale(1);
+}
+
+a:hover {
+    filter: hue-rotate(270deg);
+}
+
+
+a span {
+    position: absolute;
+    display: block;
+}
+
+a:hover span:nth-child(1) {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(90deg, transparent, #03e9f4);
+    animation: animate1 2s linear infinite;
+}
+
+@keyframes animate1 {
+    0% {
+        left: -100%;
+    }
+
+    50%,
+    100% {
+        left: 100%;
+    }
+}
+
+a:hover span:nth-child(2) {
+    top: -100%;
+    right: 0;
+    width: 4px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, #03e9f4);
+    animation: animate2 2s linear infinite;
+    animation-delay: 0.5s;
+}
+
+@keyframes animate2 {
+    0% {
+        top: -100%;
+    }
+
+    50%,
+    100% {
+        top: 100%;
+    }
+}
+
+a:hover span:nth-child(3) {
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(270deg, transparent, #03e9f4);
+    animation: animate3 2s linear infinite;
+
+}
+
+@keyframes animate3 {
+    0% {
+        right: -100%;
+    }
+
+    50%,
+    100% {
+        right: 100%;
+    }
+}
+
+
+a:hover span:nth-child(4) {
+    bottom: -100%;
+    left: 0;
+    width: 4px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, #03e9f4);
+    animation: animate4 2s linear infinite;
+    animation-delay: .50s;
+}
+
+@keyframes animate4 {
+    0% {
+        bottom: -100%;
+    }
+
+    50%,
+    100% {
+        bottom: 100%;
+    }
+}
